@@ -39,7 +39,6 @@ end
 
 def self.find_or_create_by_name(song)
   found_song = self.find_by_name(song)
-  #binding.pry
   if found_song == nil
     self.create_by_name(song)
   else
